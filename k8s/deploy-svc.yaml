@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: sm-aks-demo
-          image: acr4javacontappzerobig.azurecr.io/web:latest
+          image: acr4javacontappzerobig.azurecr.io/sangmins:latest
           ports:
             - containerPort: 8080
 ---
