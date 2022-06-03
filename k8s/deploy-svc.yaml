@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zeroaksdemo
+  name: smaksdemo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: zero-aks-app
+      app: sm-aks-app
   template:
     metadata:
       labels:
-        app: zero-aks-app
+        app: sm-aks-app
     spec:
       containers:
-        - name: zero-aks-demo
+        - name: sm-aks-demo
           image: acr4javacontappzerobig.azurecr.io/web:latest
           ports:
             - containerPort: 8080
@@ -21,12 +21,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: zero-aks-app
+    name: sm-aks-app
 spec:
   ports:
     - name: http-port
       port: 80
       targetPort: 8080
   selector:
-    app: zero-aks-app
+    app: sm-aks-app
   type: LoadBalancer
