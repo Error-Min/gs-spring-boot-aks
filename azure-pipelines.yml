@@ -14,7 +14,7 @@ steps:
   displayName: 'Build services'
   inputs:
     containerRegistry: 'svcconn4acr'
-    repository: 'sangmins'
+    repository: 'sangmin'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
     tags: |
@@ -25,7 +25,7 @@ steps:
   displayName: 'Push services'
   inputs:
     containerRegistry: 'svcconn4acr'
-    repository: 'sangmins'
+    repository: 'sangmin'
     command: 'buildAndPush'
     Dockerfile: 'Dockerfile'
     tags: |
