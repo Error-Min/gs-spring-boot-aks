@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: smt-aks-demo
-          image: acr4javacontappdana.azurecr.io/sangmins:latest
+          image: acr4javacontappdana.azurecr.io/sangmin:latest
           ports:
             - containerPort: 8080
 ---
